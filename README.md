@@ -97,7 +97,7 @@ output {
 
 <h2>Client Configuration:</h2><br>
 
-`systemctl stop firewalld`<br>
+`systemctl stop firewalld && systemctl disable firewalld`<br>
 
 `setenforce 0`<br>
 
