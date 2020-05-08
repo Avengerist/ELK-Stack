@@ -26,7 +26,7 @@ How to configure and install ELK Stack<br>
 `nano /etc/elasticsearch/elasticsearch.yml`<br>
 
 #uncomment network.host and add 127.0.0.1<br>
-network.host 127.0.0.1 <br>
+>network.host 127.0.0.1 <br>
 
 `systemctl start elasticsearch`<br>
 
@@ -48,7 +48,7 @@ network.host 127.0.0.1 <br>
 Ucomment server.host and add ip<br>
 example:<br>
 
-`server.host: "192.168.2.106"`<br>
+>server.host: "192.168.2.106"
 
 `systemctl start kibana.service`<br>
 
