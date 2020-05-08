@@ -93,7 +93,7 @@ output {
 }
 ```
 
-
+`systemctl start logstash`<br>
 
 <h2>Client Configuration:</h2><br>
 
@@ -113,8 +113,7 @@ output {
 ```
 enabled: true
 paths:
-   - /var/log/*.log
-   - /var/log/messages
+   - /var/log/secure
 ```
 Commit output.elasticsearch<br>
 Uncommit output.logstash<br>
