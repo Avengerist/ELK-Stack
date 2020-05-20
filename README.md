@@ -48,7 +48,7 @@ How to configure and install ELK Stack<br>
 Ucomment server.host and add ip<br>
 example:<br>
 
->server.host: "192.168.2.106"
+>server.host: "192.168.2.108"
 
 `systemctl start kibana.service`<br>
 
