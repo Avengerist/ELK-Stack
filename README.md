@@ -115,8 +115,8 @@ enabled: true
 paths:
    - /var/log/secure
 ```
-Commit output.elasticsearch<br>
-Uncommit output.logstash<br>
+Comment output.elasticsearch<br>
+Uncomment output.logstash<br>
 And setup IP address<br>
 Example: 
 > hosts: ["192.168.2.108:5044"]<br>
