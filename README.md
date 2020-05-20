@@ -70,6 +70,13 @@ You can check kibana in browser, just enter  `ip_address:5601`
 
 `nano /etc/logstash/conf.d/01-logstash-simple.conf`
 ```
+ input {
+  beats {
+    port => 5044
+  }
+}
+
+filter {
   if [type] == "syslog" {
     grok {
       match => {
@@ -91,6 +98,7 @@ output {
      index => "%{[@metadata][beat]}-%{+YYYY.MM.dd}"
    }
 }
+
 ```
 
 `systemctl start logstash`<br>
